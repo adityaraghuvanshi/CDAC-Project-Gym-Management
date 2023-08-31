@@ -1,0 +1,13 @@
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black; /* Add black-colored frame */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  margin-left: 22%;
+  margin-top: 2rem;
+  height: 20rem;
+  margin-top: 10;
+  background-color: white; /* Optional: Add background color */
+}

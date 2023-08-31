@@ -1,0 +1,41 @@
+.trainer-page {
+  display: flex;
+}
+
+.left-section, .right-section {
+  flex: 1;
+  padding: 2rem;
+}
+
+.left-section {
+  border-right: 2px solid #ccc;
+}
+
+input {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.right-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.right-section th, .right-section td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+.right-section th {
+  background-color: #f2f2f2;
+}
