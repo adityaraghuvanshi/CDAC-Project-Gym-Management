@@ -2,6 +2,7 @@ import React,{useEffect,useState} from "react";
 import axios from 'axios';
 import { urlGetGymDetailsAdmin, urlUpdateSubscriptionDetails } from "../ApiEndpoints";
 import { CircularProgress } from "@mui/material";
+import './SubscriptionSettings.css';
 
 const SubscriptionSettings = () => {
   const [subscriptionData, setSubscriptionData] = useState({
@@ -124,7 +125,7 @@ const SubscriptionSettings = () => {
   
   
   return (
-    <div>
+    <div className="subscription-container">
       <h1>Subscription Settings</h1>
       {!dataLoading && <form onSubmit={handleSubmit}>
         <div>

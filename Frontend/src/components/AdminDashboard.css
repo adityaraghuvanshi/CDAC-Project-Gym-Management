@@ -1,0 +1,33 @@
+.button-container{
+    position: fixed;
+    width: fit-content;
+    margin-top: 18%;
+    margin-left:33% ;
+    display: flex;
+    
+}
+*{
+    box-sizing:border-box;
+}
+
+.centered-button{
+    
+    margin-right:50px;
+}
+.adminDashboard{
+    justify-content: center;
+}
+.gym-details{
+    border: solid;
+    width: fit-content;
+    transition: 2s;    
+}
+.gym-details:hover{
+    animation: animateColor 1s infinite;
+    background-image: linear-gradient(rgb(211, 185, 185),rgb(171, 171, 217));
+}
+@keyframes animateColor {
+    0% { color: white; }
+    50% { color: rgb(6, 3, 54); }
+    100% { color: rgb(225, 215, 215); }
+  }

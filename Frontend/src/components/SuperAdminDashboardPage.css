@@ -1,4 +1,61 @@
-table,th,td
-{
-    border: solid;
+table{    
+    justify-content: center;
+    align-items: center;      
+    background-color: white;    
+}
+
+th{
+    padding-left:50px;
+    padding-right:50px;
+    background-color:rgb(37, 37, 36) ;
+}
+
+tbody{
+    margin: 0%;    
+    background-color: rgb(38, 36, 36);
+}
+
+tbody:hover{
+    background-color: rgb(37, 37, 36);
+}
+
+.table-container{
+    align-items: center;
+    justify-content: center;    
+    display: flex;
+}
+
+#operation-button{
+    margin: 0%;   
+    transition: 2s;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #DE2631;
+    transition: .5s;
+
+    
+}
+
+#operation-button:hover{
+    background-color: #ac1b24;
+    border-radius: 0%;
+
+}
+
+.addGym-button{
+    margin-bottom: 6px;
+    transition: .5s;
+    background-color: #DE2631;
+}
+.addGym-button:hover{
+    background-color: #ac1b24;
+    border-radius: 0%;
+}
+.super-admin-dashboard{
+    justify-content: center;
+    text-align: center;
+    color: antiquewhite;
+    
 }

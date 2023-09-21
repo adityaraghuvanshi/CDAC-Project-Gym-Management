@@ -1,0 +1,16 @@
+.subscription-container{
+    margin: auto;
+    color: white;
+    outline: none;
+}
+
+input{    
+    width:fit-content;
+    border-color: none;
+}
+input:focus{
+    border:solid;
+}
+input:hover{
+    background-color: none;
+}

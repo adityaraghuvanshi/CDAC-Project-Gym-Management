@@ -1,0 +1,114 @@
+
+.superAdminLogin-container {    
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 1);    
+    margin: 10px;
+    transition: .5s;
+     
+  }
+  .superAdminLogin-container:hover {
+    border-radius: 0%;
+  }  
+  
+  .superAdminLogin-container h2 {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+   
+  }
+  
+  .superAdminLogin-container input {
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px;
+    border-bottom:1px solid;
+    border-left: 3px solid rgb(36, 36, 90);  
+    box-shadow: none;
+    outline: none;  
+    background: transparent;
+    
+  }
+   input:hover{
+    background-color: none;    
+  }
+  
+  .superAdminLogin-container button {
+    padding: 10px;
+    background-color: #DE2631;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+  }
+  .superAdminLogin-container button:hover{
+    background-color: #a51f28;
+    border-radius: 0%; 
+  }
+  .text-box2{
+    position: relative;
+   
+  }  
+  #first-textbox2{
+    position: absolute;
+    top: 47%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 10px;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .first-input2:hover{
+    background-color: none;
+  }
+  
+  .first-input2:focus ~ #first-textbox2,
+  .first-input2:valid ~ #first-textbox2
+  {
+    top: 42px;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 2px;
+    background: white;   
+  }
+  .first-input2:focus{
+    outline: none;
+    border: 2px solid ;
+  }
+  #second-textbox2{
+    position: absolute;
+    top: 85%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 10px;
+    pointer-events: none;
+    transition: .5s;
+  } 
+  .second-input2:hover{
+    background-color: none;
+  }
+  .second-input2:focus ~ #second-textbox2,
+  .second-input2:valid ~ #second-textbox2
+  {
+    top: 92px;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 2px;
+    background: white;   
+
+  }
+  .second-input2:focus{   
+    border: 2px solid;    
+  }
+  .first-input2:hover{
+    background-color: white;
+  }
+  .second-input2:hover{
+    background-color: white;
+  }

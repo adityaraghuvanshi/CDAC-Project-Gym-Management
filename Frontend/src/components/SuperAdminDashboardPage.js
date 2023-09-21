@@ -60,13 +60,7 @@ const SuperAdminDashboardPage = (props) => {
 
     useEffect(() => {
         fetchData();
-        console.log("Page loaded successfully");
-        // this.props.navigation.addListener(
-        //   "didFocus",
-        //   payLoad => {
-        //     console.log("Page has Resumed!");
-        //   }
-        // );
+        console.log("Page loaded successfully");       
     }, []);
 
     const fetchData = async () => {
@@ -98,41 +92,54 @@ const SuperAdminDashboardPage = (props) => {
 
     return (
         <div className="super-admin-dashboard">
-            <h2>Super Admin Dashboard</h2>
-            <button onClick={handleAddGym}>Add Gym</button>
-            {!loading && (
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Address</th>
-                            <th>Owner</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {gyms.map((gym, index) => (
-                            <tr key={index}>
-                                <td>{gym.gymName}</td>
-                                <td>{gym.address}</td>
-                                <td>{gym.adminName}</td>
-                                <td>{gym.mobileNumber}</td>
-                                <td>
-                                    <button onClick={() => handleUpdate(index)}>
-                                        Update
-                                    </button>
-                                    <button
-                                        onClick={() => handleDelete(gym._id)}
-                                    >
-                                        Delete
-                                    </button>
-                                </td>
+            <h1>Super Admin Dashboard</h1>
+            <button className="addGym-button" onClick={handleAddGym}>
+                Add Gym
+            </button>
+            <h3>Gym List</h3>
+            <div className="table-container">
+                {!loading && (
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Owner</th>
+                                <th>Mobile Number</th>
+                                <th>Actions</th>
                             </tr>
-                        ))}
-                    </tbody>
-                </table>
-            )}
-            {loading && <CircularProgress />}
+                        </thead>
+                        <tbody>
+                            {gyms.map((gym, index) => (
+                                <tr key={index}>
+                                    
+                                    <td>{gym.gymName}</td>
+                                    <td>{gym.address}</td>
+                                    <td>{gym.adminName}</td>
+                                    <td>{gym.mobileNumber}</td>
+                                    <td>
+                                        <button
+                                            onClick={() => handleUpdate(index)}
+                                            id="operation-button"
+                                        >
+                                            Update
+                                        </button>
+                                        <button
+                                            onClick={() =>
+                                                handleDelete(gym._id)
+                                            }
+                                            id="operation-button"
+                                        >
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                )}
+                {loading && <CircularProgress />}
+            </div>
         </div>
     );
 };

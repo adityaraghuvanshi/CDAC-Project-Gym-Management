@@ -173,52 +173,42 @@ const UpdateGymForm = () => {
             {!dataLoading && (
                 <form onSubmit={handleSubmit}>
                     <div className="input-group">
-                        <label>Gym Name:</label>
+                        <label>Gym Name: </label>
                         <input
                             type="text"
                             value={gymName}
                             onChange={(e) => setGymName(e.target.value)}
                             required
                         />
-                    </div>
-                    <div className="input-group">
-                        <label>Address:</label>
+                        <label>Address: </label>
                         <input
                             type="text"
                             value={address}
                             onChange={(e) => setAddress(e.target.value)}
                             required
                         />
-                    </div>
-                    <div className="input-group">
-                        <label>Admin Name:</label>
+                        <label>Admin Name: </label>
                         <input
                             type="text"
                             value={adminName}
                             onChange={(e) => setAdminName(e.target.value)}
                             required
                         />
-                    </div>
-                    <div className="input-group">
-                        <label>Username:</label>
+                        <label>UserName: </label>
                         <input
                             type="text"
                             value={userName}
                             onChange={(e) => setUserName(e.target.value)}
                             required
                         />
-                    </div>
-                    <div className="input-group">
-                        <label>Phone Number:</label>
+                        <label>Mobile Number: </label>
                         <input
                             type="tel"
                             value={phoneNumber}
                             onChange={(e) => setPhoneNumber(e.target.value)}
                             required
                         />
-                    </div>
-                    <div className="input-group">
-                        <label>Password:</label>
+                        <label>Password: </label>
                         <input
                             type="password"
                             value={password}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Login.css";
+import "./SuperAdminLogin.css";
 import axios from "axios";
 import { urlSuperAdminLogin } from "../ApiEndpoints";
 import CircularProgress from "@mui/material/CircularProgress";
@@ -71,21 +71,24 @@ const SuperAdminLogin = () => {
         window.location.assign("/superadmindashboardpage");
     };
     return (
-        <div className="login-container">
-            <h2>Super Admin</h2>
-            <input
-                type="text"
-                placeholder="Username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-            />
-            <input
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-            />
-
+        <div className="superAdminLogin-container">
+            <div className="text-box2">
+                <h2>Super Admin</h2>
+                <input
+                    type="text"
+                    className="first-input2"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                />
+                <label id="first-textbox2">Username</label>
+                <input
+                    type="password"
+                    className="second-input2"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                <label id="second-textbox2">Password</label>
+            </div>
             {loading && <CircularProgress />}
             {!loading && <button onClick={handleLogin}>Login</button>}
         </div>

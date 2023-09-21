@@ -3,6 +3,7 @@ import axios from "axios";
 import { urlGetCustomerById, urlUpdateCustomer } from "../ApiEndpoints";
 import { useNavigate } from "react-router-dom";
 import { CircularProgress } from "@mui/material";
+import "./UpdateGymForm.css"
 
 axios.interceptors.response.use(
     (response) => {

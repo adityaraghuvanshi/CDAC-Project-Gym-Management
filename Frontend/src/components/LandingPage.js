@@ -1,18 +1,19 @@
-import React from 'react';
-import AdminLogin from './AdminLogin';
-import SuperAdminLogin from './SuperAdminLogin';
-import './LandingPage.css'
+import React from "react";
+import AdminLogin from "./AdminLogin";
+import SuperAdminLogin from "./SuperAdminLogin";
+import "./LandingPage.css";
 
-function LandingPage(){    
+function LandingPage() {
     return (
-        <>
-            <AdminLogin/>
-            <SuperAdminLogin/>
-        </>
-            
-      
+        <div className="login-container">
+            <div className="subContainer left">
+                <AdminLogin />
+            </div>
+            <div className="subContainer right">
+                <SuperAdminLogin />
+            </div>
+        </div>
     );
-  };
-  
-  export default LandingPage;
-  
+}
+
+export default LandingPage;
